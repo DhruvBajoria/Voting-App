@@ -13,7 +13,7 @@ router.post('/signup',async(req,res,)=>{
                   id:response.id
             }
             const token = generateToken(payload);
-            console.log("token is : ",token);
+            // console.log("token is : ",token);
             res.status(201).json({response:response,token:token});
       }catch(err){
             console.log(err);
